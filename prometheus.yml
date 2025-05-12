@@ -1,0 +1,9 @@
+# Prometheus配置文件
+scrape_configs:
+  - job_name: 'worldcoin'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['worldcoin-verifier:5000']
+  - job_name: 'layerzero'
+    static_configs:
+      - targets: ['layerzero-relayer:8080']

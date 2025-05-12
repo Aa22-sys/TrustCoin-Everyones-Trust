@@ -1,0 +1,11 @@
+# UptimeRobot 配置模板
+- 监控类型: HTTPS
+- 监控名称: Frontend Health Check
+- URL: https://your-app.vercel.app
+- 报警条件: 连续2次失败
+- 通知渠道: 
+  - Telegram Bot
+  - 邮件报警
+- 高级选项:
+   - 验证SSL证书有效性
+   - 关键词匹配 "Welcome"

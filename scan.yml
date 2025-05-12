@@ -1,0 +1,12 @@
+name: Code Scanning
+
+on: [push]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: shiftleft/scan-action@master
+        with:
+          output: reports/
